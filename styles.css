@@ -598,12 +598,14 @@ a.contact-row:hover { border-color: var(--signal); transform: translateX(4px); }
 .terminal-overlay {
   position: fixed; inset: 0; background: rgba(3, 5, 10, 0.6); backdrop-filter: blur(4px); z-index: 900;
 }
+.terminal-overlay[hidden] { display: none; }
 .terminal-panel {
   position: fixed; z-index: 901; left: 50%; top: 50%; transform: translate(-50%, -50%);
   width: min(640px, 92vw); max-height: 76vh; display: flex; flex-direction: column;
   background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--radius-lg);
   box-shadow: 0 40px 100px -20px rgba(0,0,0,0.6), var(--glow-signal); overflow: hidden;
 }
+.terminal-panel[hidden] { display: none; }
 .terminal-panel .panel-chrome { position: relative; }
 .terminal-close { position: absolute; right: 10px; top: 8px; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--muted); }
 .terminal-close:hover { color: var(--signal); }
@@ -624,6 +626,7 @@ a.contact-row:hover { border-color: var(--signal); transform: translateX(4px); }
   position: fixed; inset: 0; z-index: 950; display: flex; align-items: center; justify-content: center;
   background: rgba(3, 5, 10, 0.72); backdrop-filter: blur(6px); padding: 24px;
 }
+.easter-egg[hidden] { display: none; }
 .easter-egg-card {
   background: var(--panel); border: 1px solid var(--signal); border-radius: var(--radius-lg);
   padding: 36px; max-width: 380px; text-align: center; box-shadow: var(--glow-signal);
